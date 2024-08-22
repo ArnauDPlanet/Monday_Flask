@@ -1,1 +1,1 @@
-web: gunicorn main:app -b 0.0.0.0:8080 --timeout 600 --log-config logging.conf
+web: gunicorn main:app --bind 0.0.0.0:8080
