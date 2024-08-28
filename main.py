@@ -11,6 +11,9 @@ from weasyprint import HTML
 app = Flask(__name__)
 
 
+@app.route('/')
+def index():
+    return "Welcome to the PDF generator app", 200
 
 
 @app.route('/PDFgenerate', methods=['POST'])
